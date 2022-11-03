@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="StyleSheet.uss" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; align-items: center; justify-content: center;">
+        <ui:VisualElement name="MainPanel" style="height: 333px; width: 191px; background-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); align-items: center; justify-content: center;">
+            <ui:Label text="Sensitivity" display-tooltip-when-elided="true" name="SensitivityLabel" class="LabelStyle" style="margin-bottom: 0; padding-bottom: 0; padding-top: 0;" />
+            <ui:TextField picking-mode="Ignore" password="false" name="SensitivityTextField" max-length="12" style="flex-direction: row; width: 157px; align-items: stretch; justify-content: center; overflow: visible; visibility: visible; display: flex; -unity-text-align: upper-center;" />
+            <ui:Label text="Sound" display-tooltip-when-elided="true" name="SoundLabel" class="LabelStyle" style="margin-bottom: 0; padding-bottom: 0;" />
+            <ui:Slider picking-mode="Ignore" value="0" high-value="1" name="SoundSlider" style="width: 137px;" />
+            <ui:Label text="Music" display-tooltip-when-elided="true" name="MusicLabel" class="LabelStyle" style="margin-bottom: 0; padding-bottom: 0;" />
+            <ui:Slider picking-mode="Ignore" value="0" high-value="1" name="MusicSlider" style="width: 137px;" />
+            <ui:Button text="Close Options" display-tooltip-when-elided="true" name="CloseButton" focusable="true" class="ButtonStyle" style="color: rgb(255, 255, 255); left: auto;" />
+            <ui:Button text="To Lobby" display-tooltip-when-elided="true" name="LobbyButton" class="ButtonStyle" style="color: rgb(255, 255, 255);" />
+            <ui:Button text="Leave Match" display-tooltip-when-elided="true" name="LeaveButton" class="ButtonStyle" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
